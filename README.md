@@ -19,3 +19,6 @@ Python3
 2. Clone repo
 3. Run python file
 4. Profit!
+
+# Inspiration
+[Nottinghack NhTools](https://wiki.nottinghack.org.uk/wiki/Nhtools)
