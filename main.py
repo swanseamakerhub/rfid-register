@@ -37,9 +37,8 @@ class MainWindow(QMainWindow, mainwindow.Ui_MainWindow):
 	def __init__(self):
 		super(self.__class__, self).__init__()
 		self.setupUi(self) # gets defined in the UI file
-		self.shortcut_close = QShortcut(QKeySequence('Esc'), self)
+		self.shortcut_close = QShortcut(QKeySequence('Esc'), self) #press escape to close app
 		self.shortcut_close.activated.connect(lambda x:app.quit())
-		self.btnEnable.clicked.connect(self.on_click)
 		self.thread = threadRead()
 		self.thread.signal.connect(self.getUser)
 
@@ -66,17 +65,12 @@ class MainWindow(QMainWindow, mainwindow.Ui_MainWindow):
 			self.lblStatus.setText("User not found")
 		cursor.close()
 
-	@pyqtSlot()
-	def on_click(self):
-		print("button clicked")
-		self.thread.start()
-
 def main():
 	# a new app instance
 	app = QApplication(sys.argv)
 	form = MainWindow()
 	form.showFullScreen()
-
+	form.thread.start()
 	sys.exit(app.exec_())
 
 if __name__ == "__main__":
