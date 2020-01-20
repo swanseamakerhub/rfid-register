@@ -7,12 +7,12 @@ MFRC522 Python Library
 Python3
 
 # Roadmap
-*~~RFID Read/Write~~
-*Basic GUI
-*User Database
-*User Enrolment
-*Complete GUI
-*Feature Requests
+* ~~RFID Read/Write~~
+* ~~Basic GUI~~
+* ~~User Database~~
+* User Enrolment
+* Complete GUI
+* Feature Requests
 
 # Installation
 1. Linux box with pre-reqs installed
