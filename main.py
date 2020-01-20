@@ -5,7 +5,7 @@
 import sys, mainwindow, time, logging
 from datetime import datetime
 from PyQt5.QtWidgets import *
-from PyQt5.QtGui import QKeySequence
+from PyQt5.QtGui import QKeySequence, QImage, QPalette, QBrush
 from PyQt5.QtCore import pyqtSlot, QThread, pyqtSignal
 import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
@@ -41,6 +41,12 @@ class MainWindow(QMainWindow, mainwindow.Ui_MainWindow):
 		self.shortcut_close.activated.connect(lambda x:app.quit())
 		self.thread = threadRead()
 		self.thread.signal.connect(self.getUser)
+
+		#graphics
+		sImage = QImage("landing-page.png")
+		palette = QPalette()
+		palette.setBrush(QPalette.Window, QBrush(sImage))
+		self.setPalette(palette)
 
 	def fillRegister(self,results):
 		cursor2 = conn.cursor(mariadb.cursors.DictCursor)

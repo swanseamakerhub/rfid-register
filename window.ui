@@ -10,100 +10,10 @@
     <height>480</height>
    </rect>
   </property>
-  <property name="palette">
-   <palette>
-    <active>
-     <colorrole role="Base">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
-       </color>
-      </brush>
-     </colorrole>
-     <colorrole role="Window">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>85</green>
-        <blue>255</blue>
-       </color>
-      </brush>
-     </colorrole>
-    </active>
-    <inactive>
-     <colorrole role="Base">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>255</red>
-        <green>255</green>
-        <blue>255</blue>
-       </color>
-      </brush>
-     </colorrole>
-     <colorrole role="Window">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>85</green>
-        <blue>255</blue>
-       </color>
-      </brush>
-     </colorrole>
-    </inactive>
-    <disabled>
-     <colorrole role="Base">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>85</green>
-        <blue>255</blue>
-       </color>
-      </brush>
-     </colorrole>
-     <colorrole role="Window">
-      <brush brushstyle="SolidPattern">
-       <color alpha="255">
-        <red>0</red>
-        <green>85</green>
-        <blue>255</blue>
-       </color>
-      </brush>
-     </colorrole>
-    </disabled>
-   </palette>
-  </property>
   <property name="windowTitle">
    <string>RFID_Register</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QPushButton" name="btnDisable">
-    <property name="geometry">
-     <rect>
-      <x>600</x>
-      <y>430</y>
-      <width>200</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Disable</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="btnEnable">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>430</y>
-      <width>200</width>
-      <height>50</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Enable</string>
-    </property>
-   </widget>
    <widget class="QLabel" name="lblStatus">
     <property name="geometry">
      <rect>
@@ -158,7 +68,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Please scan your RFID device!</string>
+     <string> </string>
     </property>
     <property name="scaledContents">
      <bool>false</bool>
@@ -170,9 +80,6 @@
      <bool>false</bool>
     </property>
    </widget>
-   <zorder>lblStatus</zorder>
-   <zorder>btnDisable</zorder>
-   <zorder>btnEnable</zorder>
   </widget>
  </widget>
  <resources/>
