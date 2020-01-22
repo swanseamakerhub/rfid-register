@@ -10,8 +10,8 @@ Python3
 * ~~RFID Read/Write~~
 * ~~Basic GUI~~
 * ~~User Database~~
-* User Enrolment
-* Complete GUI
+* ~~User Enrolment~~
+* ~~Complete GUI~~
 * Feature Requests
 
 # Installation
