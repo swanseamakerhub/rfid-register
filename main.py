@@ -124,6 +124,8 @@ class MainWindow(QMainWindow, mainwindow.Ui_MainWindow):
 		print(cursor3._last_executed)
 		cursor3.close()
 
+		self.lblStatus.setText("Thanks for enrolling \n Please sign in")
+
 		self.waitForReset()
 
 	def getUser(self,id):
@@ -145,7 +147,6 @@ class MainWindow(QMainWindow, mainwindow.Ui_MainWindow):
 			self.fillRegister(results)
 
 		else:
-			self.lblStatus.setText("User not found")
 			self.enrollUser(results,id)
 		cursor.close()
 
