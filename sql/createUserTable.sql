@@ -5,4 +5,4 @@ FirstName varchar(255) NOT NULL,
 LastName varchar(255) NOT NULL,
 StudentNo int NOT NULL,
 LevelID int NOT NULL,
-DisciplinID int NOT NULL);
+CourseID int NOT NULL);
